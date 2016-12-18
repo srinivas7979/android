@@ -2,10 +2,10 @@
 	<property name = "version" value ="v1.0"/>
 	<echo>this is sample </echo>
 	<target name ="first" depends ="second">
-		<mkdir dir ="d:/${version}"/>
+		<delete dir ="d:/${version}"/>
 	</target>
 	<target name ="second">
-		<echo>directory created with version number</echo>
+		<echo>directory deleted with version number</echo>
 	</target>
 </project>
 
