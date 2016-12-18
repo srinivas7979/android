@@ -2,7 +2,7 @@
 	<property name = "version" value =""/>
 	<echo>this is sample </echo>
 	<target name ="first" depends ="second">
-		<mkdir dir ="d:/${version}"/>
+		<delete dir ="d:/${version}"/>
 	</target>
 	<target name ="second">
 		<echo>directory created with version number</echo>
