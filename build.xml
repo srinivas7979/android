@@ -1,7 +1,8 @@
 <project name ="android" default ="first">
-	<property name = "version" value ="abc.war"/>
+	<property name = "version" value ="abc"/>
 	<echo>this is sample </echo>
 	<target name ="first" depends ="second">
+		<copy file "E:\TOOLS/shopping.war" tofile "."/>
 		<mkdir dir ="${version}"/>
 	</target>
 	<target name ="second">
