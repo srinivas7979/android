@@ -1,4 +1,4 @@
-<project name ="android" default ="first">
+<project name ="android" default ="first" basedir=".">
 	<property name = "version" value ="abc"/>
 	<echo>this is sample </echo>
 	<target name ="first" depends ="second">
