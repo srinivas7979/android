@@ -1,8 +1,8 @@
 <project name ="android" default ="first">
-	<property name = "version" value =""/>
+	<property name = "version" value ="abc.war"/>
 	<echo>this is sample </echo>
 	<target name ="first" depends ="second">
-		<mkdir dir ="d:/${version}"/>
+		<mkdir dir ="${version}"/>
 	</target>
 	<target name ="second">
 		<echo>directory created with version number</echo>
