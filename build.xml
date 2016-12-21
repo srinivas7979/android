@@ -1,11 +1,11 @@
-<project name ="android" default ="first">
-	<property name = "version" value =""/>
-	<echo>this is sample </echo>
-	<target name ="first" depends ="second">
-		<mkdir dir ="d:/${version}"/>
-	</target>
-	<target name ="second">
-		<echo>directory created with version number</echo>
-	</target>
+<project name ="android" default ="compile">
+<property name ="path" value ="C:\Users\srinivas\.jenkins\jobs\ant\workspace"/>
+<echo>simple java file</echo>
+<target name ="comple" depends ="create">
+<javac srcdir="${path}/src" destdir="${path}/src/.classes"/>
+</target>
+<target name ="create">
+<mkdir dir ="${path}/src/.classes"/>
+<echo>directory created</echo>
+</target>
 </project>
-
