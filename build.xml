@@ -2,7 +2,7 @@
 <property name ="path" value ="C:\Users\srinivas\.jenkins\jobs\ant\workspace"/>
 <echo>simple java file</echo>
 <target name ="compile" depends ="create">
-<javac srcdir="${path}/src" destdir="${path}/src/.classes"/>
+<javac includeantruntime="false" srcdir="${path}/src" destdir="${path}/src/.classes"/>
 </target>
 <target name ="create">
 <mkdir dir ="${path}/src/.classes"/>
