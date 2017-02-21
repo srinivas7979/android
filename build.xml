@@ -1,7 +1,7 @@
 <project name ="android" default ="first">
 	<echo>generating war files</echo>
 <property name ="basedir" value ="."/>
-<property name ="version" value="123"/>
+<property name ="version" value=""/>
 <target name ="first" depends="second">
 	<mkdir dir ="${version}"/>
 </target>
