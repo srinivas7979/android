@@ -1,11 +1,11 @@
 <project name ="android" default ="first">
 	<echo>generating war files</echo>
-<property name ="basedir" value ="."/>
+<!--property name ="basedir" value ="."/-->
 <property name ="version" value=""/>
-<target name ="first" depends="second">
+<target name ="first">
 	<mkdir dir ="${version}"/>
 </target>
-<target name ="second">
+<!--target name ="second">
 	<copy file ="/opt/shopping.war" todir="${basedir}"/>
-</target>
+</target-->
 </project>
