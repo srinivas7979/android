@@ -1,5 +1,5 @@
 <?xml version="1.0" ?> 
-<project name="AntExample1" default="war">
+<project name="AntExample1">
 
 	<path id="compile.classpath">
 		<fileset dir="WebContent/WEB-INF/lib">
@@ -12,13 +12,13 @@
 		<mkdir dir="dist" />
 	</target>
 	
-	<target name="compile" depends="init"  >
+	<target name="compile">
 		<javac destdir="build/classes" debug="true" srcdir="src">
 			<classpath refid="compile.classpath"/>
 		</javac>
 	</target>
 	
-	<target name="war" depends="compile" >
+	<target name="war">
 		<war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
 			<lib dir="WebContent/WEB-INF/lib"/>
