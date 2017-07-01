@@ -1,6 +1,5 @@
 <?xml version="1.0" ?> 
 <project name="AntExample1">
-	<property name="compiledir" value=""/>
 
 	<path id="compile.classpath">
 		<fileset dir="WebContent/WEB-INF/lib">
@@ -10,7 +9,7 @@
 	
 	<target name="init">
 		<mkdir dir="build/classes"/>
-		<mkdir dir="${compiledir}" />
+		<mkdir dir="dist" />
 	</target>
 	
 	<target name="compile">
